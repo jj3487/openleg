@@ -21,8 +21,38 @@
         "cells": [
           {
             "position": {
-              "x": 266.75,
-              "y": 120
+              "x": 90,
+              "y": 70
+            },
+            "size": {
+              "width": 720,
+              "height": 290
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "45e5ca0f-aec7-4065-8db7-348870170b7e",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "12a1ce7a-1f7d-440a-8000-46eb3bd81dea"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -40,
+              "y": 150
             },
             "size": {
               "width": 112.5,
@@ -40,6 +70,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +154,6 @@
               ]
             },
             "id": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Caddy",
@@ -138,8 +168,8 @@
           },
           {
             "position": {
-              "x": 263,
-              "y": 269
+              "x": 890,
+              "y": 270
             },
             "size": {
               "width": 120,
@@ -160,6 +190,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -243,7 +274,6 @@
               ]
             },
             "id": "ef8626a8-3e1a-4bff-a509-fb36052f35f7",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "Redis",
@@ -262,8 +292,8 @@
           },
           {
             "position": {
-              "x": 263,
-              "y": 420
+              "x": 870,
+              "y": 160
             },
             "size": {
               "width": 120,
@@ -284,6 +314,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -367,7 +398,6 @@
               ]
             },
             "id": "17a7c8ce-f608-4d74-945d-82b065a30d40",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "PostgreSQL",
@@ -386,8 +416,8 @@
           },
           {
             "position": {
-              "x": 560,
-              "y": 120
+              "x": 240,
+              "y": 140
             },
             "size": {
               "width": 112.5,
@@ -402,6 +432,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -485,7 +516,6 @@
               ]
             },
             "id": "12a1ce7a-1f7d-440a-8000-46eb3bd81dea",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
