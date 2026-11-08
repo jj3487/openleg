@@ -2356,8 +2356,8 @@
           },
           {
             "position": {
-              "x": -160,
-              "y": -80
+              "x": -170,
+              "y": -90
             },
             "size": {
               "width": 112.5,
@@ -2481,6 +2481,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "LEG operator"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -2575,7 +2578,7 @@
             "id": "93d4b069-308a-4929-8fd7-ef27d8094f10",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "LEG operator",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -2595,6 +2598,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Municipality user"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -2689,7 +2695,7 @@
             "id": "6850f28a-8ef5-438a-bdf2-40092ed4d3ed",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Municipality user",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -2709,6 +2715,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Resident/ LEG \nmember"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -2803,7 +2812,7 @@
             "id": "d727cc6a-6a90-4a27-9cf5-d3be332a7fd1",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Resident/ LEG \nmember",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -2823,6 +2832,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Public visitor"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -2917,7 +2929,7 @@
             "id": "34af892f-7c03-4f76-80d4-af87bb7d1c95",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Public visitor",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
