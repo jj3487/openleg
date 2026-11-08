@@ -2260,42 +2260,12 @@
             ],
             "id": "24efe213-66ec-4d9c-b6ad-3985cc4d727a",
             "source": {
-              "x": -110,
-              "y": 90
+              "x": -150,
+              "y": 110
             },
             "target": {
-              "x": -10,
-              "y": 190
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+              "x": -50,
+              "y": 210
             }
           }
         ]
