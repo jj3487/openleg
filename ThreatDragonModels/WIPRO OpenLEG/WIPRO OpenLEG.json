@@ -21,12 +21,12 @@
         "cells": [
           {
             "position": {
-              "x": 90,
-              "y": 70
+              "x": 72.5,
+              "y": 25
             },
             "size": {
               "width": 720,
-              "height": 290
+              "height": 380
             },
             "attrs": {
               "label": {
@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "45e5ca0f-aec7-4065-8db7-348870170b7e",
             "zIndex": -1,
+            "id": "45e5ca0f-aec7-4065-8db7-348870170b7e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -45,7 +45,12 @@
               "hasOpenThreats": false,
               "crossingFlows": [],
               "containedElements": [
-                "12a1ce7a-1f7d-440a-8000-46eb3bd81dea"
+                "ef8626a8-3e1a-4bff-a509-fb36052f35f7",
+                "17a7c8ce-f608-4d74-945d-82b065a30d40",
+                "12a1ce7a-1f7d-440a-8000-46eb3bd81dea",
+                "cf893fff-a537-4be9-aa46-8d0c9079d29a",
+                "f4e7a0bc-9516-4d2e-ac22-035f03fafdf3",
+                "38c4c0fe-636b-4e1f-941e-524d2a4bc90e"
               ]
             }
           },
@@ -168,8 +173,8 @@
           },
           {
             "position": {
-              "x": 890,
-              "y": 270
+              "x": 452.5,
+              "y": 220
             },
             "size": {
               "width": 120,
@@ -277,7 +282,7 @@
             "data": {
               "type": "tm.Store",
               "name": "Redis",
-              "description": "",
+              "description": "rate limits, tenant config",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -292,8 +297,8 @@
           },
           {
             "position": {
-              "x": 870,
-              "y": 160
+              "x": 640,
+              "y": 185
             },
             "size": {
               "width": 120,
@@ -416,14 +421,17 @@
           },
           {
             "position": {
-              "x": 240,
-              "y": 140
+              "x": 280,
+              "y": 185
             },
             "size": {
               "width": 112.5,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Flask application"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -518,7 +526,358 @@
             "id": "12a1ce7a-1f7d-440a-8000-46eb3bd81dea",
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Flask application",
+              "description": "Includes Pages, dashboards and APIs",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 452.5,
+              "y": 50
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Telemetry API"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "93499385-e1fd-40aa-9135-3de0bc4eab5f"
+                },
+                {
+                  "group": "right",
+                  "id": "c09b044b-bdd5-4033-bb1a-74c61132a1df"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e1e17238-b103-4de7-9131-b9227d3f007c"
+                },
+                {
+                  "group": "left",
+                  "id": "e7ba3132-985f-4d55-91f4-b274cfad9e97"
+                }
+              ]
+            },
+            "id": "cf893fff-a537-4be9-aa46-8d0c9079d29a",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Telemetry API",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 452.5,
+              "y": 135
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Billing"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "93499385-e1fd-40aa-9135-3de0bc4eab5f"
+                },
+                {
+                  "group": "right",
+                  "id": "c09b044b-bdd5-4033-bb1a-74c61132a1df"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e1e17238-b103-4de7-9131-b9227d3f007c"
+                },
+                {
+                  "group": "left",
+                  "id": "e7ba3132-985f-4d55-91f4-b274cfad9e97"
+                }
+              ]
+            },
+            "id": "f4e7a0bc-9516-4d2e-ac22-035f03fafdf3",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Billing",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 456.25,
+              "y": 310
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Import and \nscheduled Jobs"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "93499385-e1fd-40aa-9135-3de0bc4eab5f"
+                },
+                {
+                  "group": "right",
+                  "id": "c09b044b-bdd5-4033-bb1a-74c61132a1df"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e1e17238-b103-4de7-9131-b9227d3f007c"
+                },
+                {
+                  "group": "left",
+                  "id": "e7ba3132-985f-4d55-91f4-b274cfad9e97"
+                }
+              ]
+            },
+            "id": "38c4c0fe-636b-4e1f-941e-524d2a4bc90e",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Import and \nscheduled Jobs",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
