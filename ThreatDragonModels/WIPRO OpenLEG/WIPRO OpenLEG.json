@@ -50,13 +50,12 @@
                 "64e5fa7e-3ef9-4cde-a1a8-26f456a88d22",
                 "35f84881-0c39-4950-bbc6-abd0627e0212",
                 "2bef8f6b-5d41-4b9f-9e27-01b9db39f9a3",
-                "09b12b19-14e3-44ec-bf47-ee12057109b7",
                 "565503cc-3a3f-4d77-a679-485c40c174ed",
-                "ef6f3602-754e-4604-950e-f3d200482ed0",
                 "0e448594-6144-4e66-b84a-1b3bf74eae7a",
                 "bfa043b6-c3a3-4bdf-9838-ce7dd2ab09bb",
                 "13dbb204-378b-43c3-9054-e703c285bebd",
-                "46aa154b-f305-4904-a313-f0e312227612"
+                "46aa154b-f305-4904-a313-f0e312227612",
+                "ef6f3602-754e-4604-950e-f3d200482ed0"
               ],
               "containedElements": [
                 "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
@@ -904,7 +903,7 @@
           {
             "position": {
               "x": 230,
-              "y": -90
+              "y": -100
             },
             "size": {
               "width": 112.5,
@@ -1793,60 +1792,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "45e5ca0f-aec7-4065-8db7-348870170b7e"
-              ]
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "09b12b19-14e3-44ec-bf47-ee12057109b7",
-            "source": {
-              "cell": "a8e3bd19-b5f4-4e3b-be6b-1db3c74575c0",
-              "port": "2af07394-4906-4e06-b481-a2f8d0442312"
-            },
-            "target": {
-              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
-              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
-            },
-            "vertices": [
-              {
-                "x": -60,
-                "y": 90
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Municipality dashboard",
               "description": "",
               "outOfScope": false,
@@ -1875,60 +1820,6 @@
               "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "LEG operations, billing approval",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "45e5ca0f-aec7-4065-8db7-348870170b7e"
-              ]
-            },
-            "labels": [
-              "LEG operations, billing approval"
-            ],
-            "id": "ef6f3602-754e-4604-950e-f3d200482ed0",
-            "source": {
-              "cell": "93d4b069-308a-4929-8fd7-ef27d8094f10",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "target": {
-              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
-              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
-            },
-            "vertices": [
-              {
-                "x": -110,
-                "y": 170
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -2273,7 +2164,61 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Manual formation/ member handoff",
+              "name": "LEG operations, billing approval",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "45e5ca0f-aec7-4065-8db7-348870170b7e"
+              ]
+            },
+            "labels": [
+              "LEG operations, billing approval"
+            ],
+            "id": "ef6f3602-754e-4604-950e-f3d200482ed0",
+            "source": {
+              "cell": "93d4b069-308a-4929-8fd7-ef27d8094f10",
+              "port": "2af07394-4906-4e06-b481-a2f8d0442312"
+            },
+            "target": {
+              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
+              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
+            },
+            "vertices": [
+              {
+                "x": -127,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2287,11 +2232,11 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Manual formation/ member handoff"
+              "Data Flow"
             ],
-            "id": "844a9a52-18c2-4eca-8b3f-233ee7a47218",
+            "id": "9c7f3e77-f1c3-4a46-a994-32a439f6b78d",
             "source": {
-              "cell": "a8e3bd19-b5f4-4e3b-be6b-1db3c74575c0",
+              "cell": "93d4b069-308a-4929-8fd7-ef27d8094f10",
               "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
             },
             "target": {
@@ -2419,125 +2364,8 @@
           },
           {
             "position": {
-              "x": -170,
-              "y": -90
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "LEG Operator\n"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 13,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "4e4efebb-ff9c-4c48-a33a-9ff2af0727d5"
-                },
-                {
-                  "group": "right",
-                  "id": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-                },
-                {
-                  "group": "bottom",
-                  "id": "2af07394-4906-4e06-b481-a2f8d0442312"
-                },
-                {
-                  "group": "left",
-                  "id": "de1d55c7-47ed-450f-8ea5-a5793e6d8edc"
-                }
-              ]
-            },
-            "id": "a8e3bd19-b5f4-4e3b-be6b-1db3c74575c0",
-            "data": {
-              "type": "tm.Actor",
-              "name": "LEG Operator\n",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": -330,
-              "y": 110
+              "x": -240,
+              "y": -100
             },
             "size": {
               "width": 112.5,
