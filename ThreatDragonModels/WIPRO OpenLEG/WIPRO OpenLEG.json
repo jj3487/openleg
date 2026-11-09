@@ -66,6 +66,13 @@
                 "f4e7a0bc-9516-4d2e-ac22-035f03fafdf3",
                 "38c4c0fe-636b-4e1f-941e-524d2a4bc90e"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1404,6 +1411,10 @@
               {
                 "x": 680,
                 "y": 130
+              },
+              {
+                "x": 790,
+                "y": 190
               }
             ]
           },
@@ -1427,7 +1438,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Samples, aggregate, access grants",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1443,7 +1454,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Samples, aggregate, access grants"
             ],
             "id": "a762796b-589e-494c-9f70-1fb6b6b75f99",
             "source": {
@@ -2188,6 +2199,10 @@
               {
                 "x": 370,
                 "y": -20
+              },
+              {
+                "x": 400,
+                "y": 20
               }
             ]
           },
