@@ -66,13 +66,6 @@
                 "f4e7a0bc-9516-4d2e-ac22-035f03fafdf3",
                 "38c4c0fe-636b-4e1f-941e-524d2a4bc90e"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1279,53 +1272,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "e8348c74-63ce-4c10-b205-113d6013033b",
-            "source": {
-              "cell": "a8e3bd19-b5f4-4e3b-be6b-1db3c74575c0",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "target": {
-              "cell": "f2260d09-357e-4df5-9ddf-cefecc3722bd",
-              "port": "de1d55c7-47ed-450f-8ea5-a5793e6d8edc"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Profile, meter data, invoices",
               "description": "",
               "outOfScope": false,
@@ -1380,7 +1326,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Public data, readings, job status",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1396,7 +1342,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Public data, readings, job status"
             ],
             "id": "e1ee48ce-7f95-4fa1-9e17-33386bd368d3",
             "source": {
@@ -1699,7 +1645,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Telemetry access",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1713,7 +1659,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Telemetry access"
             ],
             "id": "46b0bbdf-e191-4a7b-a835-40f9e6b8ee03",
             "source": {
@@ -1751,7 +1697,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Application data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1767,7 +1713,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Application data"
             ],
             "id": "2bef8f6b-5d41-4b9f-9e27-01b9db39f9a3",
             "source": {
@@ -2304,6 +2250,53 @@
             "target": {
               "cell": "38c4c0fe-636b-4e1f-941e-524d2a4bc90e",
               "port": "93499385-e1fd-40aa-9135-3de0bc4eab5f"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Manual formation/ member handoff",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Manual formation/ member handoff"
+            ],
+            "id": "844a9a52-18c2-4eca-8b3f-233ee7a47218",
+            "source": {
+              "cell": "a8e3bd19-b5f4-4e3b-be6b-1db3c74575c0",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "target": {
+              "cell": "f2260d09-357e-4df5-9ddf-cefecc3722bd",
+              "port": "de1d55c7-47ed-450f-8ea5-a5793e6d8edc"
             },
             "vertices": []
           },
