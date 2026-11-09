@@ -1745,7 +1745,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Mappings, tariffs, approval",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1759,7 +1759,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Mappings, tariffs, approval"
             ],
             "id": "76167741-8402-4c66-a486-8ea5761f719b",
             "source": {
@@ -1926,6 +1926,10 @@
               {
                 "x": 370,
                 "y": 360
+              },
+              {
+                "x": 410,
+                "y": 400
               }
             ]
           },
