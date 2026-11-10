@@ -28,18 +28,13 @@
               "width": 620,
               "height": 390
             },
-            "attrs": {
-              "label": {
-                "text": "Trust Boundary"
-              }
-            },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4",
             "zIndex": -1,
+            "id": "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -543,6 +538,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -660,13 +662,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
