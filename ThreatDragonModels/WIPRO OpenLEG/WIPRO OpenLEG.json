@@ -2896,9 +2896,9 @@
                 "26b4361b-46c5-4304-a263-c5413efae513",
                 "13dbb204-378b-43c3-9054-e703c285bebd",
                 "e1ee48ce-7f95-4fa1-9e17-33386bd368d3",
-                "d34e4cb4-0e90-419c-99f6-e164669ce036",
                 "ced64777-122f-404e-8ded-6d785a468e4d",
-                "7acd65ba-974f-42bb-a1cf-7858f335abe7"
+                "7acd65ba-974f-42bb-a1cf-7858f335abe7",
+                "d34e4cb4-0e90-419c-99f6-e164669ce036"
               ],
               "containedElements": [
                 "4ae27f23-78ab-4782-94e1-1bc869299139",
@@ -4753,60 +4753,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Validated data and read models",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
-            },
-            "labels": [
-              "Validated data and read models"
-            ],
-            "id": "d34e4cb4-0e90-419c-99f6-e164669ce036",
-            "source": {
-              "cell": "bac9a1e9-f200-409a-a29e-fb20f82762e9",
-              "port": "3de970e0-e716-43f3-979a-7d5f565d394c"
-            },
-            "target": {
-              "cell": "17a7c8ce-f608-4d74-945d-82b065a30d40",
-              "port": "391a6930-8a95-443e-9aab-21885e67cf9d"
-            },
-            "vertices": [
-              {
-                "x": 760,
-                "y": 290
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "",
               "description": "",
               "outOfScope": false,
@@ -4892,6 +4838,64 @@
               {
                 "x": 370,
                 "y": 215
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Validated data\nand read models",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ]
+            },
+            "labels": [
+              "Validated data\nand read models"
+            ],
+            "id": "d34e4cb4-0e90-419c-99f6-e164669ce036",
+            "source": {
+              "cell": "bac9a1e9-f200-409a-a29e-fb20f82762e9",
+              "port": "3de970e0-e716-43f3-979a-7d5f565d394c"
+            },
+            "target": {
+              "cell": "17a7c8ce-f608-4d74-945d-82b065a30d40",
+              "port": "391a6930-8a95-443e-9aab-21885e67cf9d"
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 280
+              },
+              {
+                "x": 760,
+                "y": 290
               }
             ]
           },
