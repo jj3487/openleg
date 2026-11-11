@@ -2862,12 +2862,12 @@
         "cells": [
           {
             "position": {
-              "x": 160,
-              "y": 10
+              "x": 159.9999999999996,
+              "y": 10.000000000000625
             },
             "size": {
               "width": 670,
-              "height": 590
+              "height": 720
             },
             "visible": true,
             "shape": "trust-boundary-box",
@@ -2893,7 +2893,9 @@
                 "ced64777-122f-404e-8ded-6d785a468e4d",
                 "7acd65ba-974f-42bb-a1cf-7858f335abe7",
                 "d34e4cb4-0e90-419c-99f6-e164669ce036",
-                "26b4361b-46c5-4304-a263-c5413efae513"
+                "26b4361b-46c5-4304-a263-c5413efae513",
+                "abc14f60-8f66-428e-ac2d-fbd25c4bb6b5",
+                "f0480bdf-a06e-4cfa-b946-e2193eef8403"
               ],
               "containedElements": [
                 "4ae27f23-78ab-4782-94e1-1bc869299139",
@@ -2901,7 +2903,9 @@
                 "20692f50-c3e5-40df-b4bf-e6490849a56c",
                 "4f5cab54-743b-47dd-900c-355bcf3391b9",
                 "bac9a1e9-f200-409a-a29e-fb20f82762e9",
-                "f8d5faa4-7df0-4dd3-86fa-62c52fbd235e"
+                "f8d5faa4-7df0-4dd3-86fa-62c52fbd235e",
+                "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
+                "eb5315a9-8126-458d-a21d-a3d009dc1409"
               ]
             }
           },
@@ -4674,8 +4678,8 @@
             },
             "vertices": [
               {
-                "x": 405,
-                "y": 330
+                "x": 360,
+                "y": 320
               }
             ]
           },
@@ -4925,7 +4929,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ]
             },
             "labels": [
               "Meter data"
@@ -4966,7 +4972,65 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Meter data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ]
+            },
+            "labels": [
+              "Meter data"
+            ],
+            "id": "f0480bdf-a06e-4cfa-b946-e2193eef8403",
+            "source": {
+              "cell": "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
+              "port": "1831c007-aec2-4a79-be3d-ede47eb24c00"
+            },
+            "target": {
+              "cell": "17a7c8ce-f608-4d74-945d-82b065a30d40",
+              "port": "edbd30af-8d14-409e-916f-c7f398a6b85f"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 682
+              },
+              {
+                "x": 860,
+                "y": 620
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4980,21 +5044,21 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              ""
             ],
-            "id": "f0480bdf-a06e-4cfa-b946-e2193eef8403",
+            "id": "1f5538ac-9783-4092-b4d6-80406dec040f",
             "source": {
-              "cell": "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
-              "port": "1831c007-aec2-4a79-be3d-ede47eb24c00"
+              "cell": "f8d5faa4-7df0-4dd3-86fa-62c52fbd235e",
+              "port": "d2302aff-70ed-4f7c-9495-0c1a1f7eb566"
             },
             "target": {
-              "cell": "17a7c8ce-f608-4d74-945d-82b065a30d40",
-              "port": "edbd30af-8d14-409e-916f-c7f398a6b85f"
+              "cell": "eb5315a9-8126-458d-a21d-a3d009dc1409",
+              "port": "d7176d81-4810-4597-8a49-6d4b8a971461"
             },
             "vertices": [
               {
-                "x": 860,
-                "y": 620
+                "x": 490,
+                "y": 280
               }
             ]
           },
@@ -5746,16 +5810,16 @@
           },
           {
             "position": {
-              "x": 461.9999999999952,
+              "x": 461.99999999999517,
               "y": 325
             },
             "size": {
-              "width": 110,
-              "height": 110
+              "width": 90,
+              "height": 90
             },
             "attrs": {
               "text": {
-                "text": "Validate, \nreconcile, \nallocate,\nand approve \ninvoices"
+                "text": "Validate, \nreconcile, \nallocate,\nand approve \ninvoices "
               },
               "body": {
                 "stroke": "#333333",
@@ -5851,7 +5915,7 @@
             "id": "d80cec5f-a204-4aaf-864c-d6b9bad2fd56",
             "data": {
               "type": "tm.Process",
-              "name": "Validate, \nreconcile, \nallocate,\nand approve \ninvoices",
+              "name": "Validate, \nreconcile, \nallocate,\nand approve \ninvoices ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -6452,6 +6516,126 @@
             "data": {
               "type": "tm.Process",
               "name": "Import\nmeter\nreadings",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 616.25,
+              "y": 290
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Billing"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "de1577e4-d712-4783-bd35-2522362d0906"
+                },
+                {
+                  "group": "right",
+                  "id": "1831c007-aec2-4a79-be3d-ede47eb24c00"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ddd3984b-9704-43a7-a2f2-3c8e455819a2"
+                },
+                {
+                  "group": "left",
+                  "id": "d7176d81-4810-4597-8a49-6d4b8a971461"
+                }
+              ]
+            },
+            "id": "eb5315a9-8126-458d-a21d-a3d009dc1409",
+            "zIndex": 28,
+            "data": {
+              "type": "tm.Process",
+              "name": "Billing",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
