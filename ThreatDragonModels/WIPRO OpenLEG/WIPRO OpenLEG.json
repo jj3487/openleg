@@ -4895,6 +4895,110 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Meter data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Meter data"
+            ],
+            "id": "abc14f60-8f66-428e-ac2d-fbd25c4bb6b5",
+            "source": {
+              "cell": "65146d2b-318a-4dfd-98ac-4cdda712bd86",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "target": {
+              "cell": "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
+              "port": "d7176d81-4810-4597-8a49-6d4b8a971461"
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": 600
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "f0480bdf-a06e-4cfa-b946-e2193eef8403",
+            "source": {
+              "cell": "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
+              "port": "1831c007-aec2-4a79-be3d-ede47eb24c00"
+            },
+            "target": {
+              "cell": "17a7c8ce-f608-4d74-945d-82b065a30d40",
+              "port": "edbd30af-8d14-409e-916f-c7f398a6b85f"
+            },
+            "vertices": [
+              {
+                "x": 860,
+                "y": 620
+              }
+            ]
+          },
+          {
             "position": {
               "x": -1.5,
               "y": 335
@@ -6228,6 +6332,126 @@
             "data": {
               "type": "tm.Process",
               "name": "Run\nscheduled\njobs",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 320,
+              "y": 647
+            },
+            "size": {
+              "width": 80,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Import\nmeter\nreadings"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "de1577e4-d712-4783-bd35-2522362d0906"
+                },
+                {
+                  "group": "right",
+                  "id": "1831c007-aec2-4a79-be3d-ede47eb24c00"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ddd3984b-9704-43a7-a2f2-3c8e455819a2"
+                },
+                {
+                  "group": "left",
+                  "id": "d7176d81-4810-4597-8a49-6d4b8a971461"
+                }
+              ]
+            },
+            "id": "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
+            "zIndex": 27,
+            "data": {
+              "type": "tm.Process",
+              "name": "Import\nmeter\nreadings",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
