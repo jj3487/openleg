@@ -2871,8 +2871,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "1ccec401-d315-4eeb-acaa-1512b4f4e68c",
             "zIndex": -1,
+            "id": "1ccec401-d315-4eeb-acaa-1512b4f4e68c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "",
@@ -2888,12 +2888,12 @@
                 "dde7b558-746f-4875-9da6-69cb3169d48e",
                 "5c63ee0b-da2e-4b98-991b-8621d88582af",
                 "73cba2fb-8de9-4796-b9c7-2f588e0e4dd2",
-                "26b4361b-46c5-4304-a263-c5413efae513",
                 "13dbb204-378b-43c3-9054-e703c285bebd",
                 "e1ee48ce-7f95-4fa1-9e17-33386bd368d3",
                 "ced64777-122f-404e-8ded-6d785a468e4d",
                 "7acd65ba-974f-42bb-a1cf-7858f335abe7",
-                "d34e4cb4-0e90-419c-99f6-e164669ce036"
+                "d34e4cb4-0e90-419c-99f6-e164669ce036",
+                "26b4361b-46c5-4304-a263-c5413efae513"
               ],
               "containedElements": [
                 "4ae27f23-78ab-4782-94e1-1bc869299139",
@@ -4479,55 +4479,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Public energy data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
-            },
-            "labels": [
-              "Public energy data"
-            ],
-            "id": "26b4361b-46c5-4304-a263-c5413efae513",
-            "source": {
-              "cell": "4b89b4bf-55d4-48f5-ba94-8c8deae89c6a",
-              "port": "2af07394-4906-4e06-b481-a2f8d0442312"
-            },
-            "target": {
-              "cell": "bac9a1e9-f200-409a-a29e-fb20f82762e9",
-              "port": "3a58c0f1-2822-4772-b197-b0446497af3d"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "SDAT Files",
               "description": "over Swisseldex Datahub",
               "outOfScope": false,
@@ -4893,6 +4844,55 @@
                 "y": 290
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Public energy data",
+              "description": "Swisseldex Datahub: loaded over ftp",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ]
+            },
+            "labels": [
+              "Public energy data"
+            ],
+            "id": "26b4361b-46c5-4304-a263-c5413efae513",
+            "source": {
+              "cell": "4b89b4bf-55d4-48f5-ba94-8c8deae89c6a",
+              "port": "2af07394-4906-4e06-b481-a2f8d0442312"
+            },
+            "target": {
+              "cell": "bac9a1e9-f200-409a-a29e-fb20f82762e9",
+              "port": "3a58c0f1-2822-4772-b197-b0446497af3d"
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -5901,6 +5901,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 24,
             "ports": {
               "groups": {
                 "top": {
@@ -5984,7 +5985,6 @@
               ]
             },
             "id": "4f5cab54-743b-47dd-900c-355bcf3391b9",
-            "zIndex": 24,
             "data": {
               "type": "tm.Process",
               "name": "Handle \nmember,\nmunicipality \nand public \nrequests",
@@ -6011,7 +6011,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Refresh and \nvalidate public \ndatarequests"
+                "text": "Refresh and \nvalidate public \ndata"
               },
               "body": {
                 "stroke": "#333333",
@@ -6021,6 +6021,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 25,
             "ports": {
               "groups": {
                 "top": {
@@ -6104,11 +6105,10 @@
               ]
             },
             "id": "bac9a1e9-f200-409a-a29e-fb20f82762e9",
-            "zIndex": 25,
             "data": {
               "type": "tm.Process",
-              "name": "Refresh and \nvalidate public \ndatarequests",
-              "description": "",
+              "name": "Refresh and \nvalidate public \ndata",
+              "description": "data pipeline",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -6141,6 +6141,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 26,
             "ports": {
               "groups": {
                 "top": {
@@ -6224,7 +6225,6 @@
               ]
             },
             "id": "f8d5faa4-7df0-4dd3-86fa-62c52fbd235e",
-            "zIndex": 26,
             "data": {
               "type": "tm.Process",
               "name": "Run\nscheduled\njobs",
