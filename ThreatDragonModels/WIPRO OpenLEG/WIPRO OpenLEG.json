@@ -2862,8 +2862,8 @@
         "cells": [
           {
             "position": {
-              "x": 159.9999999999996,
-              "y": 10.000000000000625
+              "x": 139.9999999999999,
+              "y": -109.99999999999989
             },
             "size": {
               "width": 670,
@@ -2881,31 +2881,29 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "46b0bbdf-e191-4a7b-a835-40f9e6b8ee03",
-                "35f84881-0c39-4950-bbc6-abd0627e0212",
                 "aad3ad25-9a92-4cf1-9c41-9cb8aa1c366b",
                 "a762796b-589e-494c-9f70-1fb6b6b75f99",
                 "31eb871f-17ab-400d-ba34-d712b803a7f9",
                 "dde7b558-746f-4875-9da6-69cb3169d48e",
+                "9c7f3e77-f1c3-4a46-a994-32a439f6b78d",
                 "5c63ee0b-da2e-4b98-991b-8621d88582af",
-                "73cba2fb-8de9-4796-b9c7-2f588e0e4dd2",
-                "13dbb204-378b-43c3-9054-e703c285bebd",
                 "e1ee48ce-7f95-4fa1-9e17-33386bd368d3",
                 "ced64777-122f-404e-8ded-6d785a468e4d",
                 "7acd65ba-974f-42bb-a1cf-7858f335abe7",
                 "d34e4cb4-0e90-419c-99f6-e164669ce036",
-                "26b4361b-46c5-4304-a263-c5413efae513",
-                "abc14f60-8f66-428e-ac2d-fbd25c4bb6b5",
-                "f0480bdf-a06e-4cfa-b946-e2193eef8403",
-                "9e861897-c674-4231-b7a5-995ddadf0be6"
+                "9e861897-c674-4231-b7a5-995ddadf0be6",
+                "35f84881-0c39-4950-bbc6-abd0627e0212"
               ],
               "containedElements": [
+                "ef8626a8-3e1a-4bff-a509-fb36052f35f7",
+                "f2260d09-357e-4df5-9ddf-cefecc3722bd",
+                "4b89b4bf-55d4-48f5-ba94-8c8deae89c6a",
                 "4ae27f23-78ab-4782-94e1-1bc869299139",
                 "d80cec5f-a204-4aaf-864c-d6b9bad2fd56",
                 "20692f50-c3e5-40df-b4bf-e6490849a56c",
                 "4f5cab54-743b-47dd-900c-355bcf3391b9",
                 "bac9a1e9-f200-409a-a29e-fb20f82762e9",
                 "f8d5faa4-7df0-4dd3-86fa-62c52fbd235e",
-                "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
                 "eb5315a9-8126-458d-a21d-a3d009dc1409",
                 "2a0010d7-0379-4713-9577-df74474103bd"
               ]
@@ -3956,60 +3954,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Samples and credentials",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
-            },
-            "labels": [
-              "Samples and credentials"
-            ],
-            "id": "35f84881-0c39-4950-bbc6-abd0627e0212",
-            "source": {
-              "cell": "65146d2b-318a-4dfd-98ac-4cdda712bd86",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "target": {
-              "cell": "4ae27f23-78ab-4782-94e1-1bc869299139",
-              "port": "3e743e66-fc5d-4cb0-b0b5-49787be98c8b"
-            },
-            "vertices": [
-              {
-                "x": 310,
-                "y": 540
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Approved invoice notices",
               "description": "",
               "outOfScope": false,
@@ -4289,7 +4233,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ]
             },
             "labels": [
               "Manual formation/ member handoff"
@@ -4390,9 +4336,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Rate limits, tenant cache"
@@ -4496,9 +4440,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "SDAT Files"
@@ -4882,9 +4824,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Public energy data"
@@ -4899,118 +4839,6 @@
               "port": "3a58c0f1-2822-4772-b197-b0446497af3d"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Meter data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
-            },
-            "labels": [
-              "Meter data"
-            ],
-            "id": "abc14f60-8f66-428e-ac2d-fbd25c4bb6b5",
-            "source": {
-              "cell": "65146d2b-318a-4dfd-98ac-4cdda712bd86",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "target": {
-              "cell": "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
-              "port": "d7176d81-4810-4597-8a49-6d4b8a971461"
-            },
-            "vertices": [
-              {
-                "x": 220,
-                "y": 600
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Meter data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
-            },
-            "labels": [
-              "Meter data"
-            ],
-            "id": "f0480bdf-a06e-4cfa-b946-e2193eef8403",
-            "source": {
-              "cell": "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
-              "port": "1831c007-aec2-4a79-be3d-ede47eb24c00"
-            },
-            "target": {
-              "cell": "17a7c8ce-f608-4d74-945d-82b065a30d40",
-              "port": "edbd30af-8d14-409e-916f-c7f398a6b85f"
-            },
-            "vertices": [
-              {
-                "x": 640,
-                "y": 682
-              },
-              {
-                "x": 860,
-                "y": 620
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -5115,6 +4943,60 @@
               {
                 "x": 200,
                 "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Meter Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ]
+            },
+            "labels": [
+              "Meter Data"
+            ],
+            "id": "35f84881-0c39-4950-bbc6-abd0627e0212",
+            "source": {
+              "cell": "65146d2b-318a-4dfd-98ac-4cdda712bd86",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "target": {
+              "cell": "4ae27f23-78ab-4782-94e1-1bc869299139",
+              "port": "3e743e66-fc5d-4cb0-b0b5-49787be98c8b"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 540
               }
             ]
           },
@@ -5861,7 +5743,29 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "5edc58a0-158b-4b21-9278-a17258e7005d",
+                  "title": "New STRIDE threat",
+                  "status": "Eliminated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "someone uses a leaked credential to send fake samples, or poses as a viewer",
+                  "mitigation": "credentials are hashed and bound to one installation and community, can be revoked or rotated, and external endpoints require validated HTTPS",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -6466,126 +6370,6 @@
           },
           {
             "position": {
-              "x": 320,
-              "y": 647
-            },
-            "size": {
-              "width": 80,
-              "height": 70
-            },
-            "attrs": {
-              "text": {
-                "text": "Import\nmeter\nreadings"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "de1577e4-d712-4783-bd35-2522362d0906"
-                },
-                {
-                  "group": "right",
-                  "id": "1831c007-aec2-4a79-be3d-ede47eb24c00"
-                },
-                {
-                  "group": "bottom",
-                  "id": "ddd3984b-9704-43a7-a2f2-3c8e455819a2"
-                },
-                {
-                  "group": "left",
-                  "id": "d7176d81-4810-4597-8a49-6d4b8a971461"
-                }
-              ]
-            },
-            "id": "8e9e2ceb-9f1d-448b-865a-45ca75d4e2dd",
-            "zIndex": 27,
-            "data": {
-              "type": "tm.Process",
-              "name": "Import\nmeter\nreadings",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
               "x": 616.25,
               "y": 290
             },
@@ -6826,6 +6610,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 3
   }
 }
