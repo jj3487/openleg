@@ -2886,13 +2886,15 @@
                 "46b0bbdf-e191-4a7b-a835-40f9e6b8ee03",
                 "35f84881-0c39-4950-bbc6-abd0627e0212",
                 "a762796b-589e-494c-9f70-1fb6b6b75f99",
-                "31eb871f-17ab-400d-ba34-d712b803a7f9"
+                "31eb871f-17ab-400d-ba34-d712b803a7f9",
+                "bfa043b6-c3a3-4bdf-9838-ce7dd2ab09bb"
               ],
               "containedElements": [
                 "ef8626a8-3e1a-4bff-a509-fb36052f35f7",
                 "f4e7a0bc-9516-4d2e-ac22-035f03fafdf3",
                 "4ae27f23-78ab-4782-94e1-1bc869299139",
-                "d80cec5f-a204-4aaf-864c-d6b9bad2fd56"
+                "d80cec5f-a204-4aaf-864c-d6b9bad2fd56",
+                "20692f50-c3e5-40df-b4bf-e6490849a56c"
               ]
             },
             "tools": {
@@ -4366,58 +4368,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Email notifications",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Email notifications"
-            ],
-            "id": "bfa043b6-c3a3-4bdf-9838-ce7dd2ab09bb",
-            "source": {
-              "x": 280,
-              "y": 320
-            },
-            "target": {
-              "cell": "8fcae1ee-0ca4-4766-9ede-454f7c58cbe2",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "vertices": [
-              {
-                "x": 240,
-                "y": 335
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "HTTPS traffic",
               "description": "",
               "outOfScope": false,
@@ -4546,16 +4496,7 @@
               "cell": "4ae27f23-78ab-4782-94e1-1bc869299139",
               "port": "3e743e66-fc5d-4cb0-b0b5-49787be98c8b"
             },
-            "vertices": [
-              {
-                "x": 280,
-                "y": 410
-              },
-              {
-                "x": 410,
-                "y": 380
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -4718,6 +4659,116 @@
               {
                 "x": 370,
                 "y": -50
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email notifications",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4"
+              ]
+            },
+            "labels": [
+              "Email notifications"
+            ],
+            "id": "bfa043b6-c3a3-4bdf-9838-ce7dd2ab09bb",
+            "source": {
+              "cell": "20692f50-c3e5-40df-b4bf-e6490849a56c",
+              "port": "f3b5e8c6-5306-4823-8dfd-463f78db3650"
+            },
+            "target": {
+              "cell": "8fcae1ee-0ca4-4766-9ede-454f7c58cbe2",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 470
+              },
+              {
+                "x": 250,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "6d43d851-0919-482f-87a0-f7f09d280127",
+            "source": {
+              "cell": "d80cec5f-a204-4aaf-864c-d6b9bad2fd56",
+              "port": "edb29a10-a7e5-4cbd-815b-a0066869bd29"
+            },
+            "target": {
+              "cell": "20692f50-c3e5-40df-b4bf-e6490849a56c",
+              "port": "a7cd8b83-dac1-4a5c-ba0d-05bce233789d"
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": 385
               }
             ]
           },
@@ -5408,6 +5459,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 20,
             "ports": {
               "groups": {
                 "top": {
@@ -5491,7 +5543,6 @@
               ]
             },
             "id": "819adb7d-8d01-4f3a-a340-9fa296bf97b8",
-            "zIndex": 20,
             "data": {
               "type": "tm.Process",
               "name": "Run Scheduled\n jobs",
@@ -5509,8 +5560,8 @@
           },
           {
             "position": {
-              "x": 452.5,
-              "y": 340
+              "x": 502.5,
+              "y": 490
             },
             "size": {
               "width": 120,
@@ -5528,6 +5579,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 21,
             "ports": {
               "groups": {
                 "top": {
@@ -5611,7 +5663,6 @@
               ]
             },
             "id": "4ae27f23-78ab-4782-94e1-1bc869299139",
-            "zIndex": 21,
             "data": {
               "type": "tm.Process",
               "name": "Validate telemetry \nand access",
@@ -5629,8 +5680,8 @@
           },
           {
             "position": {
-              "x": 692,
-              "y": 50
+              "x": 428.75,
+              "y": 325
             },
             "size": {
               "width": 140,
@@ -5648,6 +5699,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 22,
             "ports": {
               "groups": {
                 "top": {
@@ -5731,10 +5783,129 @@
               ]
             },
             "id": "d80cec5f-a204-4aaf-864c-d6b9bad2fd56",
-            "zIndex": 22,
             "data": {
               "type": "tm.Process",
               "name": "Validate, \nreconcile, allocate,\nand approve \ninvoices",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 673,
+              "y": 355
+            },
+            "size": {
+              "width": 90,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Process \nand send \nnotifications"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1c345665-f21c-4604-8cff-ae77aab507e5"
+                },
+                {
+                  "group": "right",
+                  "id": "1cd1b793-54ed-478a-b50e-c93a8d8ab7fd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f3b5e8c6-5306-4823-8dfd-463f78db3650"
+                },
+                {
+                  "group": "left",
+                  "id": "a7cd8b83-dac1-4a5c-ba0d-05bce233789d"
+                }
+              ]
+            },
+            "id": "20692f50-c3e5-40df-b4bf-e6490849a56c",
+            "zIndex": 23,
+            "data": {
+              "type": "tm.Process",
+              "name": "Process \nand send \nnotifications",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
