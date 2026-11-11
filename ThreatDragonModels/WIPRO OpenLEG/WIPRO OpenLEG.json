@@ -6389,6 +6389,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 28,
             "ports": {
               "groups": {
                 "top": {
@@ -6472,7 +6473,6 @@
               ]
             },
             "id": "eb5315a9-8126-458d-a21d-a3d009dc1409",
-            "zIndex": 28,
             "data": {
               "type": "tm.Process",
               "name": "Billing",
@@ -6509,6 +6509,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 29,
             "ports": {
               "groups": {
                 "top": {
@@ -6592,7 +6593,6 @@
               ]
             },
             "id": "2a0010d7-0379-4713-9577-df74474103bd",
-            "zIndex": 29,
             "data": {
               "type": "tm.Actor",
               "name": "Dashboard",
