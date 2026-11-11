@@ -2869,18 +2869,13 @@
               "width": 670,
               "height": 590
             },
-            "attrs": {
-              "label": {
-                "text": "Trust Boundary"
-              }
-            },
             "visible": true,
             "shape": "trust-boundary-box",
             "id": "1ccec401-d315-4eeb-acaa-1512b4f4e68c",
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -3511,8 +3506,8 @@
           },
           {
             "position": {
-              "x": -50.00000000000002,
-              "y": 460
+              "x": -69,
+              "y": 500
             },
             "size": {
               "width": 180,
