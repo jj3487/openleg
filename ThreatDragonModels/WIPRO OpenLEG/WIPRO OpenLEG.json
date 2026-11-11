@@ -2863,7 +2863,7 @@
           {
             "position": {
               "x": 150,
-              "y": 50
+              "y": 24.999999999998863
             },
             "size": {
               "width": 870,
@@ -2883,26 +2883,14 @@
                 "64e5fa7e-3ef9-4cde-a1a8-26f456a88d22",
                 "73cba2fb-8de9-4796-b9c7-2f588e0e4dd2",
                 "76167741-8402-4c66-a486-8ea5761f719b",
-                "46b0bbdf-e191-4a7b-a835-40f9e6b8ee03",
-                "35f84881-0c39-4950-bbc6-abd0627e0212",
-                "a762796b-589e-494c-9f70-1fb6b6b75f99",
-                "31eb871f-17ab-400d-ba34-d712b803a7f9",
                 "bfa043b6-c3a3-4bdf-9838-ce7dd2ab09bb"
               ],
               "containedElements": [
                 "ef8626a8-3e1a-4bff-a509-fb36052f35f7",
                 "f4e7a0bc-9516-4d2e-ac22-035f03fafdf3",
-                "4ae27f23-78ab-4782-94e1-1bc869299139",
                 "d80cec5f-a204-4aaf-864c-d6b9bad2fd56",
                 "20692f50-c3e5-40df-b4bf-e6490849a56c"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -4426,9 +4414,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Telemetry access"
@@ -4480,9 +4466,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Samples and credentials"
@@ -4529,9 +4513,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Samples, aggregate, access grants"
@@ -4583,9 +4565,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Authorized telemetry data"
@@ -4682,65 +4662,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Email notifications",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4"
-              ]
-            },
-            "labels": [
-              "Email notifications"
-            ],
-            "id": "bfa043b6-c3a3-4bdf-9838-ce7dd2ab09bb",
-            "source": {
-              "cell": "20692f50-c3e5-40df-b4bf-e6490849a56c",
-              "port": "f3b5e8c6-5306-4823-8dfd-463f78db3650"
-            },
-            "target": {
-              "cell": "8fcae1ee-0ca4-4766-9ede-454f7c58cbe2",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": 470
-              },
-              {
-                "x": 250,
-                "y": 390
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Approved invoice notices",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4754,23 +4676,18 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Approved invoice notices"
             ],
             "id": "6d43d851-0919-482f-87a0-f7f09d280127",
             "source": {
               "cell": "d80cec5f-a204-4aaf-864c-d6b9bad2fd56",
-              "port": "edb29a10-a7e5-4cbd-815b-a0066869bd29"
+              "port": "cdc3b013-a85e-4061-874c-d575585a05ee"
             },
             "target": {
               "cell": "20692f50-c3e5-40df-b4bf-e6490849a56c",
-              "port": "a7cd8b83-dac1-4a5c-ba0d-05bce233789d"
+              "port": "1cd1b793-54ed-478a-b50e-c93a8d8ab7fd"
             },
-            "vertices": [
-              {
-                "x": 600,
-                "y": 385
-              }
-            ]
+            "vertices": []
           },
           {
             "position": {
@@ -5680,11 +5597,11 @@
           },
           {
             "position": {
-              "x": 428.75,
+              "x": 420,
               "y": 325
             },
             "size": {
-              "width": 140,
+              "width": 130,
               "height": 120
             },
             "attrs": {
@@ -5800,8 +5717,8 @@
           },
           {
             "position": {
-              "x": 673,
-              "y": 355
+              "x": 272.5,
+              "y": 400
             },
             "size": {
               "width": 90,
@@ -5819,6 +5736,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 23,
             "ports": {
               "groups": {
                 "top": {
@@ -5902,7 +5820,6 @@
               ]
             },
             "id": "20692f50-c3e5-40df-b4bf-e6490849a56c",
-            "zIndex": 23,
             "data": {
               "type": "tm.Process",
               "name": "Process \nand send \nnotifications",
@@ -5917,6 +5834,64 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 24,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email notifications",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "62ffe391-1f0d-424b-8c6c-d1693f6fcdf4"
+              ]
+            },
+            "labels": [
+              "Email notifications"
+            ],
+            "id": "bfa043b6-c3a3-4bdf-9838-ce7dd2ab09bb",
+            "source": {
+              "cell": "20692f50-c3e5-40df-b4bf-e6490849a56c",
+              "port": "a7cd8b83-dac1-4a5c-ba0d-05bce233789d"
+            },
+            "target": {
+              "cell": "8fcae1ee-0ca4-4766-9ede-454f7c58cbe2",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 470
+              },
+              {
+                "x": 250,
+                "y": 390
+              }
+            ]
           }
         ]
       }
