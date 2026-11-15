@@ -3872,12 +3872,6 @@
               "cell": "d727cc6a-6a90-4a27-9cf5-d3be332a7fd1",
               "port": "2af07394-4906-4e06-b481-a2f8d0442312"
             },
-            "vertices": [
-              {
-                "x": -160,
-                "y": 355
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -3897,7 +3891,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": -160,
+                "y": 355
+              }
+            ]
           },
           {
             "shape": "flow",
