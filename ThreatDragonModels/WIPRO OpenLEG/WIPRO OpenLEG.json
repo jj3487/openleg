@@ -3872,26 +3872,6 @@
               "cell": "d727cc6a-6a90-4a27-9cf5-d3be332a7fd1",
               "port": "2af07394-4906-4e06-b481-a2f8d0442312"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
             "vertices": [
               {
                 "x": -160,
@@ -3987,7 +3967,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Approved invoice noti"
+              "Approved invoice notices"
             ],
             "id": "6d43d851-0919-482f-87a0-f7f09d280127",
             "source": {
@@ -5642,13 +5622,6 @@
                 "spoofing": 2,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -5699,8 +5672,8 @@
                 "text": "Validate \ntelemetry \nand access"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -5797,7 +5770,7 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -5805,8 +5778,8 @@
               "threats": [
                 {
                   "id": "5edc58a0-158b-4b21-9278-a17258e7005d",
-                  "title": "Unvalidated Access",
-                  "status": "Eliminated",
+                  "title": "Fake meter device",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "someone uses a leaked credential to send fake samples",
@@ -5818,12 +5791,12 @@
                 },
                 {
                   "id": "601c62ca-a382-4679-84db-e3064531aa4d",
-                  "title": "Edit data",
-                  "status": "Open",
+                  "title": "Altered meter data",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "A User edits data before it is entered to the system",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Readings are changed on the way from the collector",
+                  "mitigation": "Use TLS to secure the transmission",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 4,
@@ -5832,11 +5805,11 @@
                 {
                   "id": "89db2c64-b10d-40e4-8dd9-85ede51c1973",
                   "title": "Denial of entering data",
-                  "status": "Accepted",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Repudiation",
-                  "description": "Someone can deny that they have entered data, they could say that their credential was leaked. There is no signature",
-                  "mitigation": "The Installation is linked to a User",
+                  "description": "Someone can deny that they have entered or viewed data",
+                  "mitigation": "Log device ID, time, and access decisions, installations are linked to a user",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -5844,12 +5817,12 @@
                 },
                 {
                   "id": "d4971142-2702-45fd-a339-b4874bcf3990",
-                  "title": "Unauthorized Access",
-                  "status": "Eliminated",
+                  "title": "Cross-tenant data leak",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Information disclosure",
-                  "description": "An unauthorized user can see the data",
-                  "mitigation": "Only the owner and the people they shared the information with, can see it",
+                  "description": "One tenant sees another tenant’s readings",
+                  "mitigation": "Check access grants on every request and filter queries by tenant",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -5857,7 +5830,7 @@
                 },
                 {
                   "id": "264e2baf-7d21-4c57-93df-c512eb643416",
-                  "title": "New STRIDE threat",
+                  "title": "Telemetry flood",
                   "status": "Mitigated",
                   "severity": "Low",
                   "type": "Denial of service",
@@ -5867,15 +5840,28 @@
                   "new": false,
                   "number": 7,
                   "score": ""
+                },
+                {
+                  "id": "77ace370-7b93-421b-a485-d5096c6f97b5",
+                  "title": "Unauthorized access",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "A normal user gets access they were never granted",
+                  "mitigation": "Authorisation on each access",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
-                "tampering": 3,
-                "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1,
-                "elevationOfPrivilege": 0
+                "spoofing": 5,
+                "tampering": 4,
+                "repudiation": 2,
+                "informationDisclosure": 2,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -6721,6 +6707,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 14
   }
 }
