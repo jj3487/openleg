@@ -3163,11 +3163,13 @@
                 "text": "PostgreSQL"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3264,13 +3266,66 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e1b6225c-d1aa-4919-b710-1461c2441187",
+                  "title": "Direct data edits",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Someone edits data directly in the DB",
+                  "mitigation": "Only the app can write",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "db231140-2c78-4c8f-bbee-66cf5bdb06e5",
+                  "title": "Database leak",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "The database is leaked or stolen",
+                  "mitigation": "Encrypt at rest and use least-privilege DB accounts",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                },
+                {
+                  "id": "14204b95-b2fe-4a1d-ad75-ec575aecc2e5",
+                  "title": "Overload or data loss",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The database or cache is overloaded or lost",
+                  "mitigation": "Use backups, connection limits, and monitoring",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -3644,58 +3699,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Profile, meter data, invoices",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Profile, meter data, invoices"
-            ],
-            "id": "ae75e8c3-80b4-4189-b583-f43a6d18dc25",
-            "source": {
-              "cell": "d727cc6a-6a90-4a27-9cf5-d3be332a7fd1",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "target": {
-              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
-              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
-            },
-            "vertices": [
-              {
-                "x": -120,
-                "y": 270
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Municipality dashboard",
               "description": "",
               "outOfScope": false,
@@ -3722,58 +3725,6 @@
               "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Public pages, API",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Public pages, API"
-            ],
-            "id": "0e448594-6144-4e66-b84a-1b3bf74eae7a",
-            "source": {
-              "cell": "34af892f-7c03-4f76-80d4-af87bb7d1c95",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "target": {
-              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
-              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
-            },
-            "vertices": [
-              {
-                "x": -130,
-                "y": 360
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -5000,6 +4951,58 @@
               {
                 "x": 310,
                 "y": 540
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Profile, meter data, invoices",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Profile, meter data, invoices"
+            ],
+            "id": "ae75e8c3-80b4-4189-b583-f43a6d18dc25",
+            "source": {
+              "cell": "d727cc6a-6a90-4a27-9cf5-d3be332a7fd1",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "target": {
+              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
+              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
+            },
+            "vertices": [
+              {
+                "x": -120,
+                "y": 270
               }
             ]
           },
@@ -6701,12 +6704,79 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 30,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Public pages, API",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3d69513d-9862-4129-9ff8-7a486da9024f",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Public pages, API"
+            ],
+            "id": "0e448594-6144-4e66-b84a-1b3bf74eae7a",
+            "source": {
+              "cell": "34af892f-7c03-4f76-80d4-af87bb7d1c95",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "target": {
+              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
+              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
+            },
+            "vertices": [
+              {
+                "x": -130,
+                "y": 360
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 14
+    "threatTop": 18
   }
 }
