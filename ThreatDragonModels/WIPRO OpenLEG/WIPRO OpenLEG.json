@@ -2862,12 +2862,12 @@
         "cells": [
           {
             "position": {
-              "x": 140.00000000000006,
-              "y": 9.999999999999943
+              "x": 139.99999999999977,
+              "y": 10.000000000000227
             },
             "size": {
               "width": 670,
-              "height": 600
+              "height": 590
             },
             "visible": true,
             "shape": "trust-boundary-box",
@@ -3319,13 +3319,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -5490,6 +5483,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -6762,6 +6762,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 18
+    "threatTop": 19
   }
 }
