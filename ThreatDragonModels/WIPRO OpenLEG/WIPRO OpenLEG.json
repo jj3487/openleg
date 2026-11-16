@@ -3692,53 +3692,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Municipality dashboard",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Municipality dashboard"
-            ],
-            "id": "565503cc-3a3f-4d77-a679-485c40c174ed",
-            "source": {
-              "cell": "6850f28a-8ef5-438a-bdf2-40092ed4d3ed",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "target": {
-              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
-              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -5000,6 +4953,72 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Municipality dashboard",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "dadce7ec-1292-4607-b34f-021de011e11c",
+                  "title": "Data sniffing",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Data is read in transit",
+                  "mitigation": "Allow HTTPS only",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Municipality dashboard"
+            ],
+            "id": "565503cc-3a3f-4d77-a679-485c40c174ed",
+            "source": {
+              "cell": "6850f28a-8ef5-438a-bdf2-40092ed4d3ed",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "target": {
+              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
+              "port": "5b0b7509-1701-4385-bc0f-9f6a07cd4d5f"
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": -1.5,
               "y": 335
@@ -5483,13 +5502,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -6762,6 +6774,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 19
+    "threatTop": 20
   }
 }
