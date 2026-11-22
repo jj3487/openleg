@@ -3333,8 +3333,8 @@
                 "text": "VNB \n(meter readings)"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -3431,17 +3431,17 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": [
                 {
                   "id": "4d8830f9-8c6a-4da3-85a9-fabe54da8079",
                   "title": "Fake or altered SDAT file",
-                  "status": "Open",
+                  "status": "Accepted",
                   "severity": "TBD",
                   "type": "Spoofing",
                   "description": "A fake or modified file is loaded",
-                  "mitigation": "Verify the file source, and check the schema and value ranges",
+                  "mitigation": "FTPS credentials, certificate verification and XML/E66 parsing",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 31,
@@ -3449,7 +3449,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "repudiation": 0
               }
             }
@@ -5118,7 +5118,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -5155,8 +5155,8 @@
                 "text": "Email provider"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -5253,25 +5253,11 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "52554799-ce3b-4e06-a0c3-cae925469243",
-                  "title": "Phishing lookalike",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Spoofing",
-                  "description": "An attacker sends fake emails that look like yours",
-                  "mitigation": "Set up SPF, DKIM, and DMARC",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 33,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 0,
                 "repudiation": 0
               }
             }
