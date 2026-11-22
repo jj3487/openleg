@@ -3502,13 +3502,6 @@
                 "spoofing": 4,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3525,8 +3518,8 @@
                 "text": "Public data sources"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3623,9 +3616,23 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "0726a2e6-e816-4a50-90b5-9818ed0e402a",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 40,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -5105,60 +5112,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Telemetry access",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
-            },
-            "labels": [
-              "Telemetry access"
-            ],
-            "id": "06303832-47ed-4808-84d7-b8f5dcb1c81f",
-            "source": {
-              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
-              "port": "27ab4447-42ca-4688-b055-ac24335d0a53"
-            },
-            "target": {
-              "cell": "4ae27f23-78ab-4782-94e1-1bc869299139",
-              "port": "3e743e66-fc5d-4cb0-b0b5-49787be98c8b"
-            },
-            "vertices": [
-              {
-                "x": 340,
-                "y": 290
-              }
-            ]
-          },
-          {
             "position": {
               "x": -1.5,
               "y": 335
@@ -6157,12 +6110,12 @@
                 },
                 {
                   "id": "7b202857-6025-42e4-afad-ac9d7ea9dbe4",
-                  "title": "Dinial of approving",
+                  "title": "Denial of approving",
                   "status": "Mitigated",
                   "severity": "TBD",
                   "type": "Repudiation",
                   "description": "An approver denies approving an invoice",
-                  "mitigation": "Log who approved, what, and when",
+                  "mitigation": "Log who approved, what, and when, approver_id is checked",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 29,
@@ -6185,7 +6138,7 @@
               "threatFrequency": {
                 "spoofing": 1,
                 "tampering": 2,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
@@ -6310,6 +6263,13 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -7014,12 +6974,66 @@
                 "y": 360
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 31,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Telemetry access",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ]
+            },
+            "labels": [
+              "Telemetry access"
+            ],
+            "id": "06303832-47ed-4808-84d7-b8f5dcb1c81f",
+            "source": {
+              "cell": "4026b933-cc7d-4c35-8057-c0b8a3cd72f9",
+              "port": "27ab4447-42ca-4688-b055-ac24335d0a53"
+            },
+            "target": {
+              "cell": "4ae27f23-78ab-4782-94e1-1bc869299139",
+              "port": "3e743e66-fc5d-4cb0-b0b5-49787be98c8b"
+            },
+            "vertices": [
+              {
+                "x": 340,
+                "y": 290
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 39
+    "threatTop": 40
   }
 }
