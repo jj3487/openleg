@@ -2880,7 +2880,6 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "aad3ad25-9a92-4cf1-9c41-9cb8aa1c366b",
                 "a762796b-589e-494c-9f70-1fb6b6b75f99",
                 "31eb871f-17ab-400d-ba34-d712b803a7f9",
                 "dde7b558-746f-4875-9da6-69cb3169d48e",
@@ -2889,9 +2888,10 @@
                 "13dbb204-378b-43c3-9054-e703c285bebd",
                 "e1ee48ce-7f95-4fa1-9e17-33386bd368d3",
                 "d34e4cb4-0e90-419c-99f6-e164669ce036",
-                "26b4361b-46c5-4304-a263-c5413efae513",
                 "35f84881-0c39-4950-bbc6-abd0627e0212",
-                "0ba37a0e-bfd1-4624-8962-17cfeeb31a4e"
+                "0ba37a0e-bfd1-4624-8962-17cfeeb31a4e",
+                "26b4361b-46c5-4304-a263-c5413efae513",
+                "aad3ad25-9a92-4cf1-9c41-9cb8aa1c366b"
               ],
               "containedElements": [
                 "4ae27f23-78ab-4782-94e1-1bc869299139",
@@ -3150,7 +3150,7 @@
           {
             "position": {
               "x": 840,
-              "y": 290
+              "y": 289.99999999999886
             },
             "size": {
               "width": 120,
@@ -3333,8 +3333,8 @@
                 "text": "VNB \n(meter readings)"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -3431,9 +3431,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "4d8830f9-8c6a-4da3-85a9-fabe54da8079",
+                  "title": "Fake or altered SDAT file",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "A fake or modified file is loaded",
+                  "mitigation": "Verify the file source, and check the schema and value ranges",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 2,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -3842,60 +3860,6 @@
               {
                 "x": 480,
                 "y": 440
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Email notifications",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
-            },
-            "labels": [
-              "Email notifications"
-            ],
-            "id": "aad3ad25-9a92-4cf1-9c41-9cb8aa1c366b",
-            "source": {
-              "cell": "20692f50-c3e5-40df-b4bf-e6490849a56c",
-              "port": "a7cd8b83-dac1-4a5c-ba0d-05bce233789d"
-            },
-            "target": {
-              "cell": "8fcae1ee-0ca4-4766-9ede-454f7c58cbe2",
-              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
-            },
-            "vertices": [
-              {
-                "x": 190,
-                "y": 420
               }
             ]
           },
@@ -4566,55 +4530,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Public energy data",
-              "description": "Swisseldex Datahub: loaded over ftp",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
-              ]
-            },
-            "labels": [
-              "Public energy data"
-            ],
-            "id": "26b4361b-46c5-4304-a263-c5413efae513",
-            "source": {
-              "cell": "4b89b4bf-55d4-48f5-ba94-8c8deae89c6a",
-              "port": "2af07394-4906-4e06-b481-a2f8d0442312"
-            },
-            "target": {
-              "cell": "bac9a1e9-f200-409a-a29e-fb20f82762e9",
-              "port": "3a58c0f1-2822-4772-b197-b0446497af3d"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "",
               "description": "",
               "outOfScope": false,
@@ -5086,6 +5001,147 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Public energy data",
+              "description": "Swisseldex Datahub: loaded over ftp",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "1678a895-38bc-462b-ad30-e95d5f210bb1",
+                  "title": "Poisoned public data",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Bad public data corrupts your models",
+                  "mitigation": "Sanity-check values, keep the last known good data, and alert on odd jumps",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Public energy data"
+            ],
+            "id": "26b4361b-46c5-4304-a263-c5413efae513",
+            "source": {
+              "cell": "4b89b4bf-55d4-48f5-ba94-8c8deae89c6a",
+              "port": "2af07394-4906-4e06-b481-a2f8d0442312"
+            },
+            "target": {
+              "cell": "bac9a1e9-f200-409a-a29e-fb20f82762e9",
+              "port": "3a58c0f1-2822-4772-b197-b0446497af3d"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email notifications",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "16008ed4-1201-4931-bbc6-16699715095f",
+                  "title": "Personal data in email",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Personal data is exposed in emails",
+                  "mitigation": "Keep emails minimal and use links to the login page",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 34,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "1ccec401-d315-4eeb-acaa-1512b4f4e68c"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Email notifications"
+            ],
+            "id": "aad3ad25-9a92-4cf1-9c41-9cb8aa1c366b",
+            "source": {
+              "cell": "20692f50-c3e5-40df-b4bf-e6490849a56c",
+              "port": "a7cd8b83-dac1-4a5c-ba0d-05bce233789d"
+            },
+            "target": {
+              "cell": "8fcae1ee-0ca4-4766-9ede-454f7c58cbe2",
+              "port": "57a25830-bb8a-48a2-83e7-fd9102db3f42"
+            },
+            "vertices": [
+              {
+                "x": 190,
+                "y": 420
+              }
+            ]
+          },
+          {
             "position": {
               "x": -1.5,
               "y": 335
@@ -5099,8 +5155,8 @@
                 "text": "Email provider"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -5197,9 +5253,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "52554799-ce3b-4e06-a0c3-cae925469243",
+                  "title": "Phishing lookalike",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "An attacker sends fake emails that look like yours",
+                  "mitigation": "Set up SPF, DKIM, and DMARC",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 33,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -6064,7 +6138,55 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "fa322fee-442b-44e8-a61d-4c5208fde687",
+                  "title": "Invoice amount changed",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Someone changes amounts after approval",
+                  "mitigation": "Lock approved invoices and keep an audit trail",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                },
+                {
+                  "id": "7b202857-6025-42e4-afad-ac9d7ea9dbe4",
+                  "title": "Dinial of approving",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "An approver denies approving an invoice",
+                  "mitigation": "Log who approved, what, and when",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
+                },
+                {
+                  "id": "dec846c1-2053-43d8-8658-c8d000611647",
+                  "title": "Unauthorized approval",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "A non-operator approves invoices",
+                  "mitigation": "Restrict approval to the operator role",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -6876,6 +6998,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 31,
             "ports": {
               "groups": {
                 "top": {
@@ -6959,7 +7082,6 @@
               ]
             },
             "id": "1598ce82-cc4e-4cac-9602-f66e1a92a12e",
-            "zIndex": 31,
             "data": {
               "type": "tm.Process",
               "name": "Handle\nRequests",
@@ -6972,7 +7094,42 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "421626ec-a38e-4239-90da-f017793c135d",
+                  "title": "Traffic flood",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Too many requests take the site down",
+                  "mitigation": "Use rate limits",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                },
+                {
+                  "id": "9f03f467-c0e7-45b5-be2d-6d8a6c7a2964",
+                  "title": "Role escalation",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "A resident reaches municipality or operator\npages",
+                  "mitigation": "Use role-based access checks ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           }
         ]
@@ -6980,6 +7137,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 25
+    "threatTop": 34
   }
 }
