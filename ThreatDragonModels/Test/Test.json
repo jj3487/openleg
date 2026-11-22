@@ -447,7 +447,34 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5d2c2b6f-8a6a-4ee7-9ec9-8fca61e01d21",
+                  "title": "Redis cache poisoning",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "A stale or malicious tenant-cache entry is used by the application.",
+                  "mitigation": "Use tenant-prefixed cache keys, bounded cache values, and explicit invalidation after tenant or policy changes.",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 35,
+                  "score": ""
+                },
+                {
+                  "id": "9f7da253-0e7d-4bc7-9eb8-c3a17abf7a52",
+                  "title": "Redis outage",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Redis becomes unavailable and affects rate limiting or tenant resolution.",
+                  "mitigation": "Flask-Limiter has an in-process fallback and Redis is not the source of truth.",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 36,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3185,7 +3212,34 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5d2c2b6f-8a6a-4ee7-9ec9-8fca61e01d21",
+                  "title": "Redis cache poisoning",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "A stale or malicious tenant-cache entry is used by the application.",
+                  "mitigation": "Use tenant-prefixed cache keys, bounded cache values, and explicit invalidation after tenant or policy changes.",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 35,
+                  "score": ""
+                },
+                {
+                  "id": "9f7da253-0e7d-4bc7-9eb8-c3a17abf7a52",
+                  "title": "Redis outage",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Redis becomes unavailable and affects rate limiting or tenant resolution.",
+                  "mitigation": "Flask-Limiter has an in-process fallback and Redis is not the source of truth.",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 36,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -3648,7 +3702,21 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "8120b1eb-7e8f-4b0d-b2b7-8b4f2f5e19e7",
+                  "title": "Poisoned or anomalous public data",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "A public-data source supplies values that are malformed or implausibly changed.",
+                  "mitigation": "Validate CSV schemas and source availability; add numeric ranges, source-owned-field preservation, anomaly detection, and odd-jump alerts.",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 37,
+                  "score": ""
+                }
+              ]
             }
           },
           {
