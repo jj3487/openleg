@@ -104,6 +104,7 @@ def test_workflow_set_changes_require_contract_review():
         "lint.yml",
         "announce-release.yml",
         "secret-scan.yml",
+        "scorecard.yml",
     }
 
 
