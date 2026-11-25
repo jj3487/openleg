@@ -14,8 +14,8 @@ name: 'Scorecard supply-chain security'
   # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained
   schedule:
     - cron: '15 14 * * 0'
-  push:
-    branches: ['main']
+  # Allow manual execution
+  workflow_dispatch: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
