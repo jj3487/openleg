@@ -3039,13 +3039,11 @@
                 "text": "Redis"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -3142,26 +3140,13 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
               "threats": [
-                {
-                  "id": "ef81d85a-0d36-437d-8903-30c9258f3530",
-                  "title": "Redis cache poisoning",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "A stale or malicious tenant-cache entry is used by the application",
-                  "mitigation": "Use tenant-prefixed cache keys, bounded cache values, and explicit invalidation",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 37,
-                  "score": ""
-                },
                 {
                   "id": "23a1b148-b122-4724-bad2-897ea16d30d1",
                   "title": "Redis outage",
@@ -3177,7 +3162,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 2
