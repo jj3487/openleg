@@ -127,7 +127,7 @@ print(secrets.token_hex(32))
 ```
 ## Continuous Integration (CI) Security Features
 ### Branch Policy
-_From `engineering-contract.md`_
+_From `docs/engineering-contract.md`_
 - `main` is Pull-Request (PR) only 
 - Its required checks are exactly ci/lint, ci/test, and ci/security
 - Other workflows must run from tags, workflow_dispatch, or another off-mainline trigger
