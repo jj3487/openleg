@@ -125,6 +125,38 @@ import secrets
 
 print(secrets.token_hex(32))
 ```
+## Continuous Integration (CI) Security Features
+### Branch Policy
+_From `engineering-contract.md`_
+- `main` is Pull-Request (PR) only 
+- Its required checks are exactly ci/lint, ci/test, and ci/security
+- Other workflows must run from tags, workflow_dispatch, or another off-mainline trigger
+
+### CI/Lint
+- **Goal**: Check CSS freshness, ensure Code Quality through Ruff and MyPy
+- Workflow is defined in `.github/workflows/lint.yml`
+- Checks, if a newly generated `openleg.css` matches the one in `/static/css/openleg.css`
+- Runs Ruff check and formatting on all python
+- Runs MyPy on `app.py` `database.py` `api_public.py` `formation_wizard.py`
+
+### CI/Test
+- **Goal**: Ensure correct app behaviour by running Python tests
+- Workflow is defined in `.github/workflows/deploy.yml`
+- Sets up a throwaway DB + Python
+- Runs all PyTest tests using the file `/scripts/test.sh full`
+
+### CI/Security
+- **Goal**: Perform secret scanning
+- Installs and runs GitLeaks to find committed tokens or other secrets
+- Runs a script to ensure no private files got checked in
+
+### Publish Image
+- **Goal**: Build Docker image, run a scanner on it and generate attestations
+- Gets executed, whenever a commit is tagged with `v*`
+- Builds the image using Docker BuildX
+- Scans the image using Aquasecurity Trivy, blocking on HIGH or CRITICAL alerts
+- Pushes the image to the Docker Container Registry
+- Attests SBOM and image provenance
 
 ## Deployment Checklist
 
